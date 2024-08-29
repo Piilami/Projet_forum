@@ -4,9 +4,11 @@ import { updateUserThunk } from "../../redux/reducers/userReducer";
 import InputField from "../InputFields/InputFields";
 import Button from "../Button/Button";
 import "./ProfilForm.scss";
+import { useNavigate } from "react-router-dom";
 
 const ProfilForm = ({ user, setIsEditing }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     firstname: user.firstname || "",
@@ -42,6 +44,7 @@ const ProfilForm = ({ user, setIsEditing }) => {
         updateUserThunk({ userId: user._id, userData: formData })
       ).unwrap();
       setIsEditing(false);
+      navigate(`/`);
     } catch (error) {
       console.error("Failed to update profile:", error);
     }

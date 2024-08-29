@@ -11,7 +11,7 @@ const AdminRoute = ({ element }) => {
   }
 
   if (!user || user.status !== "administrateur") {
-    return <Navigate to="/login" state={{ from: location }} />;
+    return <Navigate to="/" state={{ from: location }} />;
   }
 
   return element;
