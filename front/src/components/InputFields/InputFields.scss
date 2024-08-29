@@ -1,0 +1,21 @@
+.auth-field-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.auth-field__label {
+  font-size: 1em;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.auth-field {
+  width: 100%;
+  height: 4vh;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: none;
+}

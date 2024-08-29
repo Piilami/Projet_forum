@@ -1,0 +1,30 @@
+@import "../../style/variables.scss";
+
+.profil-details {
+  background-color: $background-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.fields-container h2 {
+  font-size: 1.2em;
+  margin: 0 0 0.5em;
+  color: $primary-color;
+}
+
+.display-fields {
+  font-size: 1em;
+  color: $text-color;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: #fff;
+}

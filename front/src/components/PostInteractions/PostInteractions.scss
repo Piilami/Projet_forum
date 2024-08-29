@@ -1,0 +1,80 @@
+.post-interactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.btn-vote {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vote:hover {
+  background-color: #0056b3;
+}
+
+.vote-count {
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-report {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-report:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background: linear-gradient(145deg, #ff4b2b, #ff416c);
+  color: #fff;
+  border: 2px solid #ff4b2b;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(145deg, #ff416c, #ff4b2b);
+  border-color: #ff416c;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-delete:active {
+  background: linear-gradient(145deg, #ff4b2b, #ff416c);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-delete:disabled {
+  background: linear-gradient(145deg, #e0a800, #e0a800);
+  color: #666;
+  border-color: #e0a800;
+  cursor: not-allowed;
+}
+
+.vote-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
